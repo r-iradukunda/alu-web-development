@@ -1,0 +1,12 @@
+header {
+width: 100vw;
+}
+main {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+footer {
+    width: 100vw;
+}
