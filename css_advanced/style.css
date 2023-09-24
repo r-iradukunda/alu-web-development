@@ -5,6 +5,8 @@
      --white: #fff;
      --dark: #000;
      --puple: #C271FF;
+     --bg2: #071629;
+
  }
 
  #home {
@@ -78,7 +80,8 @@
      padding: 0;
  }
 
- section {
+ section,
+ footer {
      margin: 0;
      overflow: hidden;
      padding: 0 11.42361111111111%;
@@ -101,7 +104,7 @@
      flex-direction: column;
      gap: 0;
      padding: 0;
-     margin: 14.1811527904849% 0 15.09606587374199% 0;
+     margin: 10.1811527904849% 0 8.09606587374199% 0;
  }
 
  .hero_intro h1 {
@@ -144,7 +147,7 @@
  .team {
      display: flex;
      flex-direction: column;
-     gap: 87px;
+     gap: 50px;
      background-color: transparent;
      width: 100%;
      margin: 0;
@@ -158,6 +161,7 @@
      color: var(--white);
      font-weight: 100;
      opacity: .9;
+     margin: 0;
  }
 
  .team h2 span {
@@ -166,19 +170,361 @@
      opacity: 1;
  }
 
- .team>div{
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+ .team>div {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     margin: 0;
  }
- .team>div div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: transparent;
-    justify-content: flex-start;
-    align-items: center;
+
+ .team>div>div {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin: 0;
+     background: transparent;
+     justify-content: flex-start;
+     align-items: center;
+     gap: 10px;
+     color: var(--white);
+ }
+
+ .team>div>div img {
+     width: 150px;
+     aspect-ratio: 1/1;
+     height: auto;
+     border-radius: 50%;
+     object-fit: cover;
+     margin: 0;
+     padding: 0;
+ }
+
+ .team>div>div h3,
+ .team>div>div p {
+     margin: 0;
+     padding: 0;
+     font-weight: 900;
+     font-size: 18px;
+     width: 100%;
+ }
+
+ .team>div>div p {
+     font-style: italic;
+     font-size: 14px;
+     font-weight: 400;
+     opacity: .9;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .testimonial {
+     background-color: var(--puple);
+     height: 392px;
+ }
+
+ .testimonial>div {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     gap: 53px;
+     align-items: center;
+ }
+
+ .testimonial>div div {
+     color: var(--white);
+     font-weight: 300;
+     font-family: var(--font);
+ }
+
+ .testimonial>div div blockquote {
+     background-color: transparent;
+     font-size: 20px;
+     font-weight: 400;
+     margin-left: 5px;
+     opacity: .9;
+ }
+
+ .testimonial>div div p {
+     font-size: 22px;
+     font-weight: 400;
+     max-width: 100%;
+ }
+
+ .role {
+     font-style: italic;
+     opacity: .9;
+ }
+
+ .tutorials {
+     background-color: var(--white);
+     display: flex;
+     flex-direction: column;
+     gap: 75px;
+     padding-top: 87px;
+     padding-bottom: 102px;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .tutorials h1 {
+     font-family: var(--font);
+     color: var(--dark);
+     font-weight: 700;
+ }
+
+ .tutorials h1 span {
+     color: var(--puple);
+ }
+
+ .tuts {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     gap: 30px;
+ }
+
+ * {
+     box-sizing: border-box;
+     font-family: var(--font);
+ }
+
+ .tuts>div {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: fit-content;
+     width: calc(100% / 4 - 30px);
+     margin: 0;
+ }
+
+ .tuts>div img {
+     width: 100%;
+     aspect-ratio: 255/154;
+     height: auto;
+     margin: 0;
+ }
+
+ .tuts>div h2 {
+     font-weight: 900;
+     color: var(--dark);
+     font-size: 16px;
+     margin: 0;
+
+ }
+
+ .tuts>div p {
+     color: #07162980;
+     opacity: .5;
+     padding: 0;
+     margin: 0;
+ }
+
+ .tuts>div>div p {
+     color: var(--puple);
+     opacity: 1;
+ }
+
+ .tuts>div>div {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+ }
+
+ .tuts>div>div img {
+     width: 30px;
+     aspect-ratio: 1/1;
+     height: auto;
+     border-radius: 50%;
+ }
+
+ .tuts>div>div h3 {
+     font-size: 14px;
+     color: var(--puple);
+     font-weight: 600;
+ }
+
+ .ratings {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0;
+ }
+
+ .ratings p,
+ .min {
+     font-size: 14px;
+     color: var(--puple);
+     opacity: 1;
+     font-weight: 600;
+ }
+
+ .ratings img {
+     flex-grow: 1;
+     width: 70%;
+     max-height: 15px;
+ }
+
+ .membership {
+     background-color: var(--bg2);
+     padding-top: 70px;
+     padding-bottom: 52px;
+ }
+
+ .membership>div {
+     width: 100%;
+     display: flex;
+     margin: 0;
+     padding: 0;
+     align-items: flex-start;
+     justify-content: space-between;
+ }
+
+ .membership>div * {
+     color: var(--white);
+     font-family: var(--font);
+     font-weight: 100;
+     font-size: 18px;
+ }
+
+ .membership>div>div {
+     width: calc(100% / 4 - 50px);
+ }
+
+ .membership>div p {
+     opacity: .7;
+     font-size: 14px;
+ }
+
+ .actions {
+     padding: 0;
+     width: 100%;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: red;
+
+ }
+
+ .register_membership {
+     margin: 0 auto;
+     border-radius: 30px;
+     border: none;
+     padding: 15px 30px;
+     color: var(--white);
+     font-family: var(--font);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--puple);
+     cursor: pointer;
+     margin-top: 85px;
+
+ }
+
+ .faq {
+     background-color: var(--white);
+     padding-top: 67px;
+     display: flex;
+     flex-direction: column;
+     gap: 74px;
+     padding-bottom: 84px;
+
+ }
+
+ .faq h1 {
+     font-family: var(--font);
+     font-size: 60px;
+     font-weight: 300;
+     letter-spacing: 0px;
+     text-align: center;
+     margin: 0;
+
+ }
+
+ .faq>div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 200px;
+ }
+
+ .faq>div>div>div h2 {
+     font-size: 16px;
+     font-weight: 700;
+     font-family: var(--font);
+
+ }
+
+ .faq>div>div>div p {
+     color: var(--dark);
+     opacity: .5;
+     font-size: 14px;
+ }
+
+ footer {
+     background-color: var(--bg2);
+     padding-top: 95px;
+     padding-bottom: 39px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: space-between;
+ }
+
+ footer>div {
+     width: 100%;
+ }
+
+ footer>div>div {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ footer>div>div p {
+     margin: 0 auto;
+     color: var(--white);
+     font-size: 12px;
+     opacity: .5;
+ }
+
+ .copyRight {
+     margin: auto;
+     margin-top: 70px;
+     align-self: center;
+ }
+
+ /* Media querries */
+
+ @media screen and (max-height: 800px) {
+     .homePage {
+         height: 110vh;
+     }
+
+     .hero_intro {
+         margin: 8.1811527904849% 0 5.09606587374199% 0;
+     }
+
+     .hero_intro h1 {
+         font-size: 90px;
+     }
+ }
+
+ @media screen and (max-width: 1200px) {
+     .faq>div {
+         gap: 100px;
+     }
+ }
+
+ @media screen and (max-width: 700px) {
+     .faq>div {
+         gap: 30px;
+         flex-direction: column;
+     }
  }
